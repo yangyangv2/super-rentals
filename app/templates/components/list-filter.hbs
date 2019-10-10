@@ -3,5 +3,17 @@
   key-up=(action "handleFilterEntry")
   class="light"
   placeholder="Filter By City"
+  disabled=true
 }}
-{{yield this.results}}
+
+{{!-- {{#let (component "input"
+  value=this.value
+  key-up=(action "handleFilterEntry")
+  class="light"
+  placeholder="Filter By City")  as |inn|}}
+  {{#each this.results as |result index|}}
+    {{inn value=index}}
+  {{/each}}
+{{/let}} --}}
+
+{{!-- {{yield this.results}} --}}

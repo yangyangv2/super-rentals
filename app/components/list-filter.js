@@ -8,7 +8,6 @@ export default Component.extend({
       this._super(...arguments);
       this.filter('').then((results) => this.set('results', results));
     },
-  
     actions: {
       handleFilterEntry() {
         let filterInputValue = this.value;
